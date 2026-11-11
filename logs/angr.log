@@ -1,16 +1,22 @@
-i= 0  stdout=b'SECRET!\n'  errored=0
-i= 1  stdout=b'SECRET!\n'  errored=0
-i= 2  stdout=b'SECRET!\n'  errored=0
-i= 3  stdout=b'SECRET!\n'  errored=0
-i= 4  stdout=b'SECRET!\n'  errored=0
-i= 5  stdout=b'SECRET!\n'  errored=0
-i= 6  stdout=b'SECRET!\n'  errored=0
-i= 7  stdout=b'SECRET!\n'  errored=0
-i= 8  stdout=b'XECRET!\n'  errored=0
-i= 9  stdout=b'SXCRET!\n'  errored=0
-i=10  stdout=b'SEXRET!\n'  errored=0
-i=11  stdout=b'SECXET!\n'  errored=0
-i=12  stdout=b'SECRXT!\n'  errored=0
-i=13  stdout=b'SECREX!\n'  errored=0
-i=14  stdout=b'SECRETX\n'  errored=0
-i=15  stdout=b'SECRET!X\n'  errored=0
+paths: deadended=2 errored=0
+
+path 0: i in 16..255 (240 values)
+  stdout=b''
+
+path 1: i in 0..15 (16 values)
+  i= 0  stdout=b'SECRET!\n'
+  i= 1  stdout=b'SECRET!\n'
+  i= 2  stdout=b'SECRET!\n'
+  i= 3  stdout=b'SECRET!\n'
+  i= 4  stdout=b'SECRET!\n'
+  i= 5  stdout=b'SECRET!\n'
+  i= 6  stdout=b'SECRET!\n'
+  i= 7  stdout=b'SECRET!\n'
+  i= 8  stdout=b'XECRET!\n'
+  i= 9  stdout=b'SXCRET!\n'
+  i=10  stdout=b'SEXRET!\n'
+  i=11  stdout=b'SECXET!\n'
+  i=12  stdout=b'SECRXT!\n'
+  i=13  stdout=b'SECREX!\n'
+  i=14  stdout=b'SECRETX\n'
+  i=15  stdout=b'SECRET!X\n'

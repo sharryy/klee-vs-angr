@@ -1,6 +1,6 @@
 #include <klee/klee.h>
 
-char buf[8];
+char buf[8] = "AAAAAAA";
 char secret[8] = "SECRET!";
 
 int main(void) {
