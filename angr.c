@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-char buf[8];
+char buf[8] = "AAAAAAA";
 char secret[8] = "SECRET!";
 
 int main(void) {
@@ -9,7 +9,7 @@ int main(void) {
 
   if (read(0, &i, 1) != 1)
     return 1;
-  if (i > 16)
+  if (i > 15)
     return 1;
 
   buf[i] = 'X';
