@@ -1,0 +1,30 @@
+KLEE: output directory is "/home/shehryar/klee-vs-angr/klee-out-0"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: ERROR: klee.c:12: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 1
+KLEE: done: generated tests = 2
+ktest file : 'klee-last/test000001.ktest'
+args       : ['k.bc']
+num objects: 1
+object 0: name: 'i'
+object 0: size: 1
+object 0: data: b'\x08'
+object 0: hex : 0x08
+object 0: int : 8
+object 0: uint: 8
+object 0: text: .
+ktest file : 'klee-last/test000002.ktest'
+args       : ['k.bc']
+num objects: 1
+object 0: name: 'i'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
