@@ -15,14 +15,15 @@ bin/k.bc: klee.c
 
 run-klee: bin/k.bc
 	mkdir -p logs
-	$(KLEE) bin/k.bc 2>&1 | tee logs/klee.log
-	ktest-tool klee-last/test*.ktest | tee -a logs/klee.log
+	rm -rf klee-out
+	$(KLEE) --output-dir=klee-out bin/k.bc 2>&1 | tee logs/klee.log
+	ktest-tool klee-out/test*.ktest >> logs/klee.log
 
 run-angr: bin/angr
 	mkdir -p logs
 	$(PYTHON) run.py | tee logs/angr.log
 
 clean:
-	rm -rf bin klee-out-* klee-last
+	rm -rf bin klee-out
 
 .PHONY: all run-klee run-angr clean
